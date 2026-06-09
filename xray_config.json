@@ -1,0 +1,57 @@
+{
+  "log": {
+    "loglevel": "warning",
+    "access": "./logs/xray_access.log",
+    "error":  "./logs/xray_error.log"
+  },
+  "inbounds": [
+    {
+      "tag": "vless-in",
+      "port": 8443,
+      "listen": "0.0.0.0",
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "REPLACE_UUID",
+            "flow": ""
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/phantom"
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "socks-out",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "127.0.0.1",
+            "port": 1081
+          }
+        ]
+      }
+    },
+    {
+      "tag": "direct",
+      "protocol": "freedom"
+    }
+  ],
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "inboundTag": ["vless-in"],
+        "outboundTag": "socks-out"
+      }
+    ]
+  }
+}
